@@ -18,7 +18,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Add a marker at the same coordinates
-var marker = L.marker([32.164972,35.364135]).addTo(map);
+var marker = L.marker([32.16492440988277, 35.344266590248026]).addTo(map);
 marker.bindPopup('Target').openPopup();
 var marker = L.marker([32.167133645400185, 35.33529461248444]).addTo(map);
 marker.bindPopup('Gideon ha shofet tomb').openPopup();
