@@ -1,5 +1,5 @@
 // initialize map once, at the zoom you want
-var map = L.map('map').setView([32.164972, 35.364135], 8);
+var map = L.map('map').setView([32.164972, 35.364135], 10);
 
 
   
