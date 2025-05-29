@@ -1,5 +1,5 @@
 // initialize map once, at the zoom you want
-var map = L.map('map').setView([32.164972, 35.364135], 10);
+var map = L.map('map').setView([32.16492440988277, 35.344266590248026], 12);
 
 
   
@@ -9,9 +9,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-L.marker([32.164972,35.364135]).addTo(map)
-    .bindPopup('A pretty CSS popup.<br> Easily customizable.')
-    .openPopup();
+
 
 
 // Add OpenStreetMap tiles as the base layer
@@ -34,7 +32,7 @@ marker.bindPopup('Historical landmark').openPopup();
 
 
 // Add a circle overlay
-var circle = L.circle([32.164972,35.364135], {
+var circle = L.circle([32.16492440988277, 35.344266590248026], {
   color: 'red',
   fillColor: '#f03',
   fillOpacity: 0.5,
