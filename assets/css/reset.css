@@ -28,7 +28,7 @@ img, video, canvas {
 
 /* Map container sizing */
 #map {
-  height: 100vh;
+  height: 700vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -136,7 +136,7 @@ body {
 
 
 div#map {
-  height: 180px;
+  height: 700px;
 }
 .card
 { width: auto;

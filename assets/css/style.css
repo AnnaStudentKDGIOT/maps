@@ -2,7 +2,7 @@
 
 /* Map container sizing */
 #map {
-  height: 500px;
+  height: 700px;
   
   
 }
@@ -226,7 +226,7 @@ button {
 .card-body
 {width: auto;}
 div#map {
-  height: 180px;
+  height: 700px;
 }
 
 
