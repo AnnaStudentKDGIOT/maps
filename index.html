@@ -36,30 +36,48 @@
 
 </head>
 <body>
-    <nav>
+    <nav class="bg-black w-100 h-25">
       <a href="/index.html">home</a>  
+      <button class="btn btn-primary d-flex flex-column" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+  ASIDE
+</button>
     </nav>
 
+    <aside class="position-fixed top-50 end-0 translate-middle-y" >
+  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+    <div class="card card-body bg-light border-0 shadow-none h-100">
+      <ul class="list-unstyled">
+        <li>Takos Phone numbers </li>
+        <li>+972 50 236 3787</li>
+        <li>+972 50 341 5904</li>
+        <li>+972 52 546 0779</li>
+        <li>+972 58 361 9826</li>
+        <li> <a href="mailto:tsophiabrown@gmail.com">tsophiabrown</a></li>
+        <li><a href="mailto:imatsophia@gmail.com">imatsophia</a></li>
 
-    <section>
+      </ul>
+     
+
+    </div>
+  </div>
+</aside>
+
+    <main class="bg-white">
+       <section class="container active w-auto h-100 bg-black">
         <h1> globaal</h1>
         <div id="map"></div>
 
     </section>
-    <section>
-        <h2> middenoosten</h2>
-        <div id="map"></div>
 
-    </section>
-    <section>
-        <h2>oosteuropa</h2>
+    </main>
 
-            <div id="map"></div>
-
-    </section>
+   
+   
   
 
-
+<footer class="w-auto h-25 bg-black">
+  Maps of the world
+</footer>
 
   <!-- Leaflet JS -->
   

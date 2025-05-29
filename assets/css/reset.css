@@ -79,3 +79,368 @@ body.dark-mode .leaflet-popup-content-wrapper {
   background: rgba(40, 40, 40, 0.9);
   color: #eee;
 }
+
+/* RESET + BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  padding-left: 10%;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+  background-color: #04163d;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+
+}
+
+#asideCollapsible {
+
+    min-height: 120px;
+    width: 90vw;
+  max-width: 400px;
+  z-index: 3000 !important;
+
+
+}
+
+@media (min-width: 768px) {
+  #asideCollapsible {
+    width: 400px;
+    max-width: 90vw;
+  }
+}
+#asideCollapsible .collapse:not(.show) {
+  display: none !important;
+}
+
+@media (max-width: 767.98px) and (orientation: landscape) {
+  #asideCollapsible {
+    width: 60vw;
+    max-width: 350px;
+  }
+}
+
+.navbar a {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(27, 14, 63);
+  color: #eeeeee;
+}
+
+
+#vertaalbalk body {
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+#vertaalbalk label, 
+#vertaalbalk select {
+  margin-right: 1rem;
+}
+
+
+div#map {
+  height: 180px;
+}
+.card
+{ width: auto;
+  height: fit-content;
+}
+.card-body
+{width: auto;
+  height: fit-content;
+}
+/* ASIDE */
+.aside { 
+    float: left; /* of right */
+    width: 25%;  /* pas aan naar wens */
+    margin: 0 20px 20px 0;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin-left: 25px;
+    
+    z-index: 3000 !important;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+#weather-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  margin: 0 auto;
+}
+ #weather-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        #weather-section h2 {
+            text-align: center;
+        }
+        #weather-section .weather-details {
+            margin-top: 15px;
+        }
+        #weather-section .weather-details p {
+            margin: 5px 0;}
+#weather-section h2 {
+  text-align: center;
+}
+.buttonSpecial {
+  min-width: 300px;
+}
+#weather-section .weather-details {
+  margin-top: 15px;
+}
+
+#weather-section .weather-details p {
+  margin: 5px 0;
+}
+
+.weatherbyIP{
+   body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0; height: 100%;
+      transition: background 1s ease-in-out;
+      background-size: cover;
+    }
+    .container {
+      max-width: 900px; margin: 50px auto;
+      padding: 20px;
+      background: rgba(255,255,255,0.8);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 { text-align: center; }
+    canvas { margin-top: 30px; }
+    button {
+      padding: 10px; font-size: 16px;
+      margin: 10px 0; width: 100%;
+      border-radius: 6px; border: 1px solid #ccc;
+    }
+}
+
+/* CSS voor actieve navigatielinks */
+
+.nav-link.active,
+.dropdown-item.active {
+  font-weight: bold;
+  color: #04081a !important; /* goudkleur actieve link */
+}
+
+.dropdown-menu .dropdown-item.active {
+  background-color: #00060c !important;
+  color: #04163d !important;
+  z-index: 1051 !important;
+}
+.dropdown-menu {
+  z-index: 1051 !important;
+}
+
+/* Eventuele extra custom navbar-styling */
+.custom-navbar {
+  background-color: #04163d;
+  z-index: 1051 !important;
+  position: relative;
+}
+
+.navbar-brand img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+#mySidebar.closed {
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+#mySidebar.open {
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* HERO SECTION */
+.hero,
+.hero2 {
+  background-color: #04163d;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero2 {
+  background-image: url('/assets/images/daylight-environment-forest-459225.jpg');
+}
+
+.hero h1 {
+  color: white;
+  font-size: 48px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+/* DROPDOWN MENU */
+/*
+.dropdown {
+  position: absolute;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  color: #f3f0f6;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #eeeeee;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+*/
+/* LOGO */
+.logo {
+  padding: 1px;
+}
+
+/* CONTAINERS */
+.container,
+.container-section {
+  background-color: #04163d;
+  color: #eef1f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+:root {
+  --navbar-height: 75px;
+  --sidebar-width: 75px;
+}
+
+.main {
+    margin-top: 56px;
+    margin-left: 56px;
+}
+
+#APIcorner{
+
+    background-color: #f6f6fa;
+    height: 105px;
+    width: auto;
+    
+
+}
+#weather body {
+            margin-top: 20px;
+            font-family: sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+#weather {
+    background-color: #062767;
+}
+
+/* --- DROPDOWN VISUEEL VERBETEREN --- */
+.dropdown-menu {
+  background-color: #081943 !important;    /* Donkerblauw menu */
+  color: #fff !important;                  /* Tekst standaard wit */
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.dropdown-menu .dropdown-item {
+  color: #fff !important;
+  background-color: transparent !important;
+}
+
+/* HOVER: accentkleur of lichter blauw + tekst goed leesbaar */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background-color: #213373 !important;    /* iets lichter blauw */
+  color: #ffd700 !important;               /* goud, of wit (#fff) voor leesbaarheid */
+  font-weight: bold;
+}
+
+/* Actieve item (optioneel: zelfde als hover) */
+.dropdown-menu .dropdown-item.active {
+  background-color: #213373 !important;
+  color: #ffd700 !important;
+  font-weight: bold;
+}
+
+.BG{
+   background-color: #04163d;
+  height: 85px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
