@@ -1,0 +1,43 @@
+
+
+/* Map container sizing */
+#map {
+  height: 100vh;
+  
+  
+}
+
+/* Leaflet base styling overrides */
+.leaflet-container {
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Popup styling */
+.leaflet-popup-content-wrapper {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.leaflet-popup-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.leaflet-popup-tip-container {
+  width: 20px;
+  height: 10px;
+}
+
+/* Control styling */
+.leaflet-control-attribution {
+  font-size: 11px;
+  color: #666;
+}
+
+.leaflet-control-zoom {
+  box-shadow: none;
+}
+
