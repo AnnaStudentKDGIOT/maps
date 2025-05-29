@@ -1,10 +1,9 @@
 // initialize map once, at the zoom you want
-var map = L.map('map').setView([32.164972, 35.364135], 10);
+var map = L.map('map').setView([32.164972, 35.364135], 8);
 
 
   
 
-  var map = L.map('map').setView([32.164972,35.364135], 8);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -14,7 +13,6 @@ L.marker([32.164972,35.364135]).addTo(map)
     .bindPopup('A pretty CSS popup.<br> Easily customizable.')
     .openPopup();
 
-var map = L.map('map').setView([32.164972,35.364135], 13);
 
 // Add OpenStreetMap tiles as the base layer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
