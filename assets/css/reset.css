@@ -28,7 +28,7 @@ img, video, canvas {
 
 /* Map container sizing */
 #map {
-  height: 700vh;
+  height: 700px;
   width: 100%;
   margin: 0;
   padding: 0;
