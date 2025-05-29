@@ -1,27 +1,7 @@
 // initialize map once, at the zoom you want
 var map = L.map('map').setView([32.164972, 35.364135], 10);
 
-// use the osm-intl tiles with English labels
-L.tileLayer(
-  'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png?lang=en', {
-    maxZoom: 13,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }
-).addTo(map);
 
-// add your overlays as before
-L.marker([32.164972, 35.364135])
-  .addTo(map)
-  .bindPopup('<b>Hello world!</b><br>I am a Leaflet marker.')
-  .openPopup();
-
-L.circle([32.164972, 35.364135], {
-  color: 'red',
-  fillColor: '#f03',
-  fillOpacity: 0.5,
-  radius: 500
-}).addTo(map)
-  .bindPopup('I am a circle.');
   
 
   var map = L.map('map').setView([32.164972,35.364135], 8);
@@ -43,7 +23,17 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // Add a marker at the same coordinates
 var marker = L.marker([32.164972,35.364135]).addTo(map);
-marker.bindPopup('<b>Hello world!</b><br>I am a Leaflet marker.').openPopup();
+marker.bindPopup('Target').openPopup();
+var marker = L.marker([32.167133645400185, 35.33529461248444]).addTo(map);
+marker.bindPopup('Gideon ha shofet tomb').openPopup();
+var marker = L.marker([32.16078511879551, 35.32928645385604]).addTo(map);
+marker.bindPopup('Chabad Itamar').openPopup();
+var marker = L.marker([32.16261978116773, 35.33761203012379]).addTo(map);
+marker.bindPopup('Roadside אצלי בגבעה restaurant').openPopup();
+
+var marker = L.marker([32.163873143133564, 35.33904969406694]).addTo(map);
+marker.bindPopup('Historical landmark').openPopup();
+
 
 // Add a circle overlay
 var circle = L.circle([32.164972,35.364135], {
