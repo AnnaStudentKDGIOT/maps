@@ -1,10 +1,10 @@
 // initialize map once, at the zoom you want
-var map = L.map('map').setView([32.164972, 35.364135], 13);
+var map = L.map('map').setView([32.164972, 35.364135], 10);
 
 // use the osm-intl tiles with English labels
 L.tileLayer(
   'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png?lang=en', {
-    maxZoom: 19,
+    maxZoom: 13,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }
 ).addTo(map);

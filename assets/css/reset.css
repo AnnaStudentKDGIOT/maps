@@ -170,6 +170,17 @@ div#map {
     
     z-index: 3000 !important;
 }
+#aside3 { 
+    float: bottom; /* of right */
+    width: 25%;  /* pas aan naar wens */
+    margin: 0 20px 20px 0;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin-left: 25px;
+    
+    z-index: 3000 !important;
+}
 
 
 body {
