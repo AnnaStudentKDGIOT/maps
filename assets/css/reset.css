@@ -1,0 +1,81 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Remove default list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Ensure images and media scale */
+img, video, canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Map container sizing */
+#map {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Leaflet base styling overrides */
+.leaflet-container {
+  background: #f5f5f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Popup styling */
+.leaflet-popup-content-wrapper {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.leaflet-popup-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.leaflet-popup-tip-container {
+  width: 20px;
+  height: 10px;
+}
+
+/* Control styling */
+.leaflet-control-attribution {
+  font-size: 11px;
+  color: #666;
+}
+
+.leaflet-control-zoom {
+  box-shadow: none;
+}
+
+/* Custom marker icon size override (if using default icons) */
+
+
+/* Example: Dark mode toggle styling (optional) */
+body.dark-mode .leaflet-container {
+  background: #2b2b2b;
+}
+body.dark-mode .leaflet-popup-content-wrapper {
+  background: rgba(40, 40, 40, 0.9);
+  color: #eee;
+}
